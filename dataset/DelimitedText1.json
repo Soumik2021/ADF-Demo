@@ -1,0 +1,40 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Dimension.DimProduct.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Product.[SKU]",
+				"type": "String"
+			},
+			{
+				"name": "Product.[All Products]",
+				"type": "String"
+			},
+			{
+				"name": "Product.[Classification]",
+				"type": "String"
+			},
+			{
+				"name": "Product.[Product Category]",
+				"type": "String"
+			}
+		]
+	}
+}
