@@ -1,0 +1,9 @@
+{
+	"name": "adf-soumik",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a6eee13f-20b6-409b-8ba0-289902f091f1",
+		"tenantId": "01863d9d-186f-4878-99de-717a53f698af"
+	}
+}
